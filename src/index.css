@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	body {
+		@apply bg-gradient-to-b from-gray-500 to-gray-800 bg-no-repeat
+	}
+}
