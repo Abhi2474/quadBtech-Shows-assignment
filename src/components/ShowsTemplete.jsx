@@ -12,9 +12,9 @@ const ShowsTemplete = ({ items }) => {
 			{
 				items.show.image &&
 				<>
-					<div className='w-52 m-6 rounded shadow-xl bg-gray-400 relative'>
+					<div className='sm:w-52  sm:m-6 rounded shadow-xl my-6 bg-gray-400 relative mx-auto'>
 						<Link to={`/show/${items.show.id}`}>
-							<img className='mx-auto pb-2 rounded' src={items.show.image.medium} alt='no-image' />
+							<img className='sm:mx-auto pb-2 rounded' src={items.show.image.medium} alt='no-image' />
 							<div className='flex justify-between items-center px-3'>
 								<p className='text-center text-lg mb-2'>{items.show.name}</p>
 								<div className='flex justify-center py-2'>

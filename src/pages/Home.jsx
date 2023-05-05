@@ -19,7 +19,7 @@ const Home = () => {
 
 	return (
 		<>
-			<div className='flex flex-wrap container mx-auto my-20'>
+			<div className='flex flex-wrap container  my-20 mx-auto'>
 			{
 				showsData.map((items) => {
 					return (

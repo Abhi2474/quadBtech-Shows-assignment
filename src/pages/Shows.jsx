@@ -32,13 +32,13 @@ const Shows = () => {
     <div className='my-24 container mx-auto text-white'>
       {
         data.image &&
-        <div className='sm:flex px-4'>
-          <img className='sm:w-1/2 mr-5  rounded shadow-lg' src={data.image.original} alt="" />
+        <div className='sm:flex px-4 py-2'>
+          <img className='sm:w-1/2 mr-5 rounded shadow-lg mx-auto' src={data.image.original} alt="" />
           <div>
 
             <h1 className='text-5xl my-5 font-bold'>{data.name}</h1>
 
-            {/* This login removes the html tags which is already was in summary */}
+            {/* This logic removes the html tags which is already was in summary */}
             <p className='text-white'>{data.summary.replace(/<[^>]+>/g, '')}</p>
 
             {
